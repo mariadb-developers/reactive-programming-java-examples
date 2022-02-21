@@ -1,0 +1,13 @@
+config:
+  target: "http://localhost:9090"
+  phases:
+    - duration: 1
+      arrivalRate: 100
+  http:
+    timeout: 20
+
+scenarios:
+  - name: "Request word"
+    flow:
+      - get:
+          url: "/words?limit=100"

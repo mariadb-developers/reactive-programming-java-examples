@@ -11,8 +11,7 @@ public class Service {
         return IntStream.generate(() -> {
             try {
                 Thread.sleep(1000);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
+            } catch (InterruptedException ignored) {
             }
             return (int) (Math.random() * 10);
         });

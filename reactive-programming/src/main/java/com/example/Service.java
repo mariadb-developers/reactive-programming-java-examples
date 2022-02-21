@@ -7,7 +7,7 @@ import java.util.stream.IntStream;
 
 public class Service {
 
-    public static IntStream getNumberStream() {
+    public static IntStream getStream() {
         return IntStream.generate(() -> {
             try {
                 Thread.sleep(1000);
@@ -17,7 +17,7 @@ public class Service {
         });
     }
 
-    public static Flux<Integer> getNumberFlux() {
+    public static Flux<Integer> getFlux() {
         return Flux.interval(Duration.ofSeconds(1))
                 .map(l -> (int) (Math.random() * 10));
     }

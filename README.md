@@ -2,7 +2,7 @@
 
 Learn about reactive programming with these projects:
 
- - Start with [reactive-programming](/reactive-programming) and see how a pool of 2 threads can successfully serve 10 users.
+ - Start with [reactive-programming](/reactive-programming) and see how a 1 thread can successfully serve 10 users.
  - Take a look at [blocking-service](/blocking-service) to see a typical REST web service with JDBC connections.
  - See how to use the `Flux` class and [R2DBC](https://r2dbc.io/) to build a fully reactive service.
  - Compare the the throughput using [Artillery](https://www.artillery.io/). See how many HTTP 200 OK responses you get on each service (test scripts included on each service project).

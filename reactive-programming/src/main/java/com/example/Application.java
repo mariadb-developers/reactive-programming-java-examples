@@ -10,7 +10,7 @@ public class Application {
 
         for (int u = 1; u <= 10; u++) {
             var user = "User " + u;
-            System.out.println("Subscribing to flux " + u);
+            System.out.println("Submitting task " + u);
             threadPool.submit(() -> {
                 Service.getFlux()
                         .map(i -> user + " - " + i)

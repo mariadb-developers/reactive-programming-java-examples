@@ -1,4 +1,4 @@
-# Reactive programming with Project Reactor
+# Reactive programming with Project Reactor and R2DBC
 
 Learn about reactive programming with these projects:
 

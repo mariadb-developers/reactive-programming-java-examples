@@ -8,14 +8,17 @@
         <version>2.6.3</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>com.example</groupId>
     <artifactId>reactive-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>reactive-service</name>
     <description>reactive-service</description>
+
     <properties>
         <java.version>17</java.version>
     </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>

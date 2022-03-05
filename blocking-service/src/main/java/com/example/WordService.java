@@ -24,9 +24,8 @@ public class WordService {
     }
 
     private Word fillData(Word word) {
-        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-        String encoded = encoder.encode(word.getText());
-        word.setData(encoded);
+        String encoded = new BCryptPasswordEncoder().encode(word.getText());
+        word.setComputedData(encoded);
         return word;
     }
 

@@ -11,6 +11,6 @@ public class Word {
 
     private String text;
 
-    private String data;
+    private String computedData;
 
 }

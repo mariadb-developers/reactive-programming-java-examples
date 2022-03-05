@@ -16,6 +16,6 @@ public class Word {
     private String text;
 
     @Transient
-    private String data;
+    private String computedData;
 
 }

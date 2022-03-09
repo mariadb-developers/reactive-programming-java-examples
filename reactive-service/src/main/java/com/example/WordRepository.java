@@ -1,4 +1,4 @@
-package com.example.reactiveservice;
+package com.example;
 
 import org.springframework.data.r2dbc.repository.Query;
 import org.springframework.data.r2dbc.repository.R2dbcRepository;

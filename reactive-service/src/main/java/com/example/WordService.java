@@ -1,4 +1,4 @@
-package com.example.reactiveservice;
+package com.example;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.MediaType;

@@ -25,6 +25,8 @@ CREATE TABLE `word` (
 
 > Note: Aria is a storage engine for read-heavy workoads, but it has some limitations. See [this blog post](https://mariadb.com/resources/blog/storage-engine-choice-aria/).
 
+Insert or import test data into this table as well. Check [this](https://github.com/mariadb-developers/wordle-game-clone) for an example on how to import +370k rows.
+
 ## Support and Contribution
 
 Please feel free to submit PR's, issues or requests to this project

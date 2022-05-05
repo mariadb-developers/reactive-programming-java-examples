@@ -11,6 +11,20 @@ Learn about Reactive Programming in Java (watch the [webinar](https://go.mariadb
  - **Compare throughput** using [Artillery](https://www.artillery.io/). See how many HTTP 200 OK responses you get on 
    each service (test scripts included on each service project).
  
+# Setting up the MariaDB database
+
+To run the experiments in this repository, you'll need a MariaDB database running on your machine with the following table:
+
+```sql
+CREATE TABLE `word` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `text` varchar(64) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=Aria;
+```
+
+> Note: Aria is a storage engine for read-heavy workoads, but it has some limitations. See [this blog post](https://mariadb.com/resources/blog/storage-engine-choice-aria/).
+
 ## Support and Contribution
 
 Please feel free to submit PR's, issues or requests to this project

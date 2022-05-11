@@ -13,9 +13,12 @@ Learn about Reactive Programming in Java (watch the [webinar](https://go.mariadb
  
 # Setting up the MariaDB database
 
-To run the experiments in this repository, you'll need a MariaDB database running on your machine with the following table:
+To run the experiments in this repository, you'll need a MariaDB database running on your machine with the following database and table:
 
 ```sql
+CREATE DATABASE reactive;
+USE reactive;
+
 CREATE TABLE `word` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `text` varchar(64) DEFAULT NULL,
@@ -25,7 +28,17 @@ CREATE TABLE `word` (
 
 > Note: Aria is a storage engine for read-heavy workoads, but it has some limitations. See [this blog post](https://mariadb.com/resources/blog/storage-engine-choice-aria/).
 
-Insert or import test data into this table as well. Check [this](https://github.com/mariadb-developers/wordle-game-clone) for an example on how to import +370k rows.
+Insert or import test data into this table. For example, download [this CSV file](https://www.kaggle.com/datasets/ruchi798/part-of-speech-tagging) and import it as follows:
+
+```sql
+LOAD DATA LOCAL INFILE '/path/to/words_pos.csv'
+    IGNORE INTO TABLE word
+    FIELDS
+    TERMINATED BY ','
+    LINES TERMINATED BY '\n'
+    IGNORE 0 LINES
+    (@dummy, text) SET text = UPPER(text);
+```
 
 ## Support and Contribution
 

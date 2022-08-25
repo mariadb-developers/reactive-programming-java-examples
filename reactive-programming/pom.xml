@@ -18,7 +18,7 @@
             <dependency>
                 <groupId>io.projectreactor</groupId>
                 <artifactId>reactor-bom</artifactId>
-                <version>2020.0.15</version>
+                <version>2020.0.22</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -38,7 +38,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <version>1.18.22</version>
+            <version>1.18.24</version>
             <optional>true</optional>
         </dependency>
     </dependencies>

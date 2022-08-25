@@ -1,8 +1,5 @@
 package com.example;
 
-import reactor.core.publisher.Flux;
-
-import java.time.Duration;
 import java.util.stream.IntStream;
 
 public class Service {
@@ -15,11 +12,6 @@ public class Service {
             }
             return (int) (Math.random() * 10);
         });
-    }
-
-    public static Flux<Integer> getFlux() {
-        return Flux.interval(Duration.ofSeconds(1))
-                .map(l -> (int) (Math.random() * 10));
     }
 
 }
